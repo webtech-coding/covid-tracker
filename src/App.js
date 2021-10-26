@@ -1,11 +1,16 @@
-import React from "react";
-import { useMachine } from "@xstate/react";
+import React, {Fragment} from "react";
+import AsidePanel from "./asidePanel";
+import MainView from "./mainView";
+import './main.scss';
 
 const App =()=>{
-  //const [current, send] = useMachine()
-  return <div>
-   the covid traker
-  </div>
+  return(
+    <Fragment>
+      <AsidePanel />
+      <MainView />
+    </Fragment>
+  )
+  
 }
 
 export default App
